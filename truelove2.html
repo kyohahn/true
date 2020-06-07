@@ -1,0 +1,43 @@
+<!doctype html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>True Love</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+      <script>jQuery(function($) {
+              $('#kunst').mouseover(function() {
+              var dWidth = $(document).width() - 200, // 100 = image width
+              dHeight = $(document).height() - 200, // 100 = image height
+              nextX = Math.floor(Math.random() * dWidth),
+              nextY = Math.floor(Math.random() * dHeight);
+              $(this).animate({ left: nextX + 'px', top: nextY + 'px' });
+              });
+            });
+      </script>
+
+      <style type="text/css">
+            /* body { position: absolute; } */
+            #kunst { position: absolute; vertical-align:middle;  z-index:900;}
+            #punst {
+              position: absolute;
+              text-align: center;
+              display: inline;
+              height:auto;
+              bottom:0;
+              top:45%;
+              left:0;
+              right:0;
+              }
+            .kunstFont {text-decoration: underline; font-family: helvetica; font-size:20pt;}
+            .punstFont {font-family: helvetica; font-size:25pt;}
+      </style>
+
+    </head>
+
+    <body>
+      <div id = "kunst" class="kunstFont"> https://kunst.com </div>
+      <div id = "punst" class="punstFont"><a href="truelove3.html"> https://sex.com </a></div>
+
+    </body>
+  </html>
